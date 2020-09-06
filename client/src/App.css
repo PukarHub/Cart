@@ -38,7 +38,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 60px 0 60px;
+    padding: 20px 70px 0 60px;
 }
 
 nav li {
@@ -227,4 +227,9 @@ li a:hover {
     .basketTotalContainer {
         padding-right: 8%;
     }
+}
+
+
+#btn {
+    background: none;
 }

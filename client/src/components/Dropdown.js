@@ -3,7 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Cart from './Cart'
+import Cart from './Cart';
+import  "./Dropdown.css";
 
 
 
@@ -51,14 +52,14 @@ export default function CustomizedMenus() {
 
   return (
     <div>
-      <Button
+      <Button id="button"
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
         color="secondary"
         onClick={handleClick}
       >
-       Dropdown
+       Cart
       </Button>
       <StyledMenu
         id="customized-menu"

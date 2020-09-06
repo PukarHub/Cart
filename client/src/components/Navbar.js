@@ -17,15 +17,19 @@ const Navbar = (props) => {
                 </h2>
                 <ul>
                 <li>
-                    <Dropdown />
+               
                 </li>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li className="cart">
-                        <Link to="/cart">
-                            <i className="fas fa-shopping-basket"></i>
-                            Cart <span>{props.basketProps.basketNumbers}</span>
+                        <Link to="/">
+                        <i  className="fas fa-shopping-basket"></i> 
+                        <button id="btn">
+                        <Dropdown />
+                        <span>{props.basketProps.basketNumbers}</span> 
+                        </button> 
+                            
                         </Link>
                     </li>
                 </ul>
