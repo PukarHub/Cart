@@ -21,7 +21,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
         }
         console.log(productsInCart);
     });
-
+    
     useEffect(() => {
         getNumbers();
         // eslint-disable-next-line
@@ -30,11 +30,11 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
     const productImages = [p1, p2, p3, p4];
 
     const orderProduct = () => {
-         
+
     }
          productsInCart = productsInCart.map((product, index) => {
              console.log(product);
-              
+
              return (
                  <Fragment key={index}>
                      <div className="product">
@@ -65,7 +65,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
                  </Fragment>
              );
          });
-    
+
 
 
     return (
@@ -82,7 +82,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
                 <h4 className="basketTotal">{basketProps.cartCost}</h4>
             </div>
             <Link to="/order"><button id="orderbtn" onClick={orderProduct}>Order Now</button></Link>
-            
+
         </div>
     );
 };
