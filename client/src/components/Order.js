@@ -1,10 +1,10 @@
 import React from 'react'
+import Cart from "./Cart"
 
 const Order = () => {
     return (
         <div>
-            Aba Order Hunxa
-            <button>Order Now</button>
+            <Cart />
         </div>
     )
 }
