@@ -233,3 +233,20 @@ li a:hover {
 #btn {
     background: none;
 }
+
+#orderbtn {
+    font-size: 20px;
+    outline: none;
+    border: 2px solid black;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blue;
+    margin-top: 100px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#orderbtn:hover {
+    background-color: blueviolet;
+    color: black;
+}
