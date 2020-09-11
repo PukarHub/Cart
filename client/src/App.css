@@ -250,3 +250,123 @@ li a:hover {
     background-color: blueviolet;
     color: black;
 }
+
+#form {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#form label {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+#form input {
+    padding: 5px 10px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#email {
+    margin-left: 37px;
+}
+
+#address {
+    margin-left: 9px;
+}
+
+#contact {
+    margin-left: -12px;
+}
+
+#paymentbtn {
+    font-size: 20px;
+    padding: 5px 40px;
+    margin-top: 20px;
+    margin-left: 750px;
+    color: blanchedalmond;
+    background-color: black;
+    /* visibility: hidden; */
+}
+
+#paymentbtn:hover {
+    color: black;
+    background-color: blanchedalmond;
+    transition: 1s ease-in-out;
+}
+
+#esewa {
+    min-width: 30%;
+    height: 100px;
+}
+
+#paypal {
+    min-width: 50%;
+    height: 100px; 
+} 
+
+#payment {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#payment h1 {
+    font-weight: bolder;
+}
+
+#payment label {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#payment input {
+    padding: 5px 10px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#country {
+    margin-left: -80px;
+}
+
+#submitbtn {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+
+#backbtn {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 40px;
+    margin-top: -10px;
+    margin-left: 650px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+

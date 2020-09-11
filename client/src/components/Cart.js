@@ -30,8 +30,8 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
     const productImages = [p1, p2, p3, p4];
 
     const orderProduct = () => {
-
-    }
+      
+}
          productsInCart = productsInCart.map((product, index) => {
              console.log(product);
 
@@ -81,8 +81,8 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
                 <h4 className="basketTotalTitle">Basket Total</h4>
                 <h4 className="basketTotal">{basketProps.cartCost}</h4>
             </div>
-            <Link to="/order"><button id="orderbtn" onClick={orderProduct}>Order Now</button></Link>
-
+            <Link to="/customerDetail"><button id="orderbtn" onClick={orderProduct}>Order Now</button></Link>
+            
         </div>
     );
 };

@@ -14,4 +14,3 @@ export const getNumbers =  () =>
             console.log(JSON.stringify(error.message));  
         } 
     };
-
