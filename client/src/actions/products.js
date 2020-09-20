@@ -1,14 +1,16 @@
 import axios from 'axios';
 import { FETCH_PRODUCTS } from './types';
 
-export const fetchProducts = () => async (dispatch) => {
+export const fetchProducts = (productName) => async (dispatch) => {
     try {
-        const res = await axios('/api/products');
+        const res = await axios.get('http://localhost:5000/api/products', {
+            name: productName,
+        });
         dispatch({
             type: FETCH_PRODUCTS,
-            payload: res.data.products,
+            payload: res.data.name,
         });
-    } catch (err) {
-        console.log(err.message);
+    } catch (error) {
+        console.log(JSON.stringify(error.message));
     }
 };

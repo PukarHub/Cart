@@ -4,15 +4,15 @@ const router = express.Router();
 const Product = require('../../models/Product');
 
 
-// // Gets all the Products
-//  router.get('/', async (req,res) => {
-//     try {
-//         const product = await Product.find();
-//         res.json(product);
-//     } catch (error) {
-//         res.json({message: error})
-//     }
-//  });
+// Gets all the Products
+router.get('/:id', async (req,res) => {
+        try {
+            const product = await Product.findById(req.params.id)
+            res.json(product)
+        } catch (error) {
+            res.json({message: error})
+        }
+    })
 
 //  //  Submits a product
 //   router.post("/", async (req,res) => {

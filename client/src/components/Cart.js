@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { productQuantity, clearProduct } from '../actions/productQuantity';
 import {getNumbers} from '../actions/getAction'
+import {fetchProducts} from '../actions/products'
 import p1 from '../images/1.jpeg';
 import p2 from '../images/2.jpeg';
 import p3 from '../images/3.jpeg';
 import p4 from '../images/4.jpg';
-import { useEffect } from 'react';
 import {Link} from 'react-router-dom'
 
-const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
+const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers, fetchProducts }) => {
 
     let productsInCart = [];
 
@@ -26,6 +26,14 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
         getNumbers();
         // eslint-disable-next-line
     },[])
+    
+    useEffect(()=>{
+        fetchProducts();
+        // eslint-disable-next-line
+    },[])
+
+
+
 
     const productImages = [p1, p2, p3, p4];
 
@@ -66,7 +74,7 @@ const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers }) => {
              );
          });
 
-
+     
 
     return (
         <div className="container-products">
@@ -93,6 +101,6 @@ const mapStateToProps = (state) => ({
     basketProps: state.basketState,
 });
 
-export default connect(mapStateToProps, { productQuantity, clearProduct, getNumbers })(
+export default connect(mapStateToProps, { productQuantity, clearProduct, getNumbers, fetchProducts })(
     Cart
 );
