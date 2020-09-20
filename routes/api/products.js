@@ -5,10 +5,10 @@ const Product = require('../../models/Product');
 
 
 // Gets all the Products
-router.get('/:id', async (req,res) => {
+router.get('/api/id', async (req,res) => {
         try {
-            const product = await Product.findById(req.params.id)
-            res.json(product)
+            const product = await Product.find({product: req.product})
+            res.json(product)     
         } catch (error) {
             res.json({message: error})
         }

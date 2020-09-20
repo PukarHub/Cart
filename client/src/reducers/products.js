@@ -7,7 +7,7 @@ export default (state = initialState, action) => {
         case FETCH_PRODUCTS:
             return {
                 ...state,
-                products: [...state.products, action.payload],
+                products: action.payload
             };
         default:
             return state;

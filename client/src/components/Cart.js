@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 
 const Cart = ({ basketProps, productQuantity, clearProduct, getNumbers, fetchProducts }) => {
 
-    let productsInCart = [];
+    let productsInCart = [];                                   
 
     Object.keys(basketProps.products).forEach((item) => {
         console.log(item);
