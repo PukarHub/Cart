@@ -56,7 +56,7 @@ export default (state = initialState, action) => {
         case GET_NUMBERS_BASKET:
             return {
                 ...state,
-                products: action.payload
+                products: action.payload,
             };
         case INCREASE_QUANTITY:
             productSelected = { ...state.products[action.payload] };

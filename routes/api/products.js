@@ -1,18 +1,29 @@
-const  express =  require('express')
+const express = require('express');
 const router = express.Router();
 
 const Product = require('../../models/Product');
 
+// Gets Product with specified ID
+router.get('/:id', async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id);
+        res.json(product);
+    } catch (error) {
+        res.json({ message: error });
+    }
+});
 
-// Gets all the Products
-router.get('/api/id', async (req,res) => {
-        try {
-            const product = await Product.find({product: req.product})
-            res.json(product)     
-        } catch (error) {
-            res.json({message: error})
-        }
-    })
+// Get all Products
+router.get('/', async (req, res) => {
+    try {
+        const products = await Product.find();
+        res.json({
+            products,
+        });
+    } catch (error) {
+        res.json({ message: error.message });
+    }
+});
 
 //  //  Submits a product
 //   router.post("/", async (req,res) => {
@@ -58,7 +69,6 @@ router.get('/api/id', async (req,res) => {
 //     }
 // });
 
-
 // @route POST api/products/test
 // @desc   Tests products route
 // @access   Public
@@ -82,6 +92,5 @@ router.post('/', async (req, res) => {
         res.send('Server Error');
     }
 });
-
 
 module.exports = router;

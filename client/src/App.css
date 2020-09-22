@@ -229,7 +229,6 @@ li a:hover {
     }
 }
 
-
 #btn {
     background: none;
 }
@@ -311,8 +310,8 @@ li a:hover {
 
 #paypal {
     min-width: 50%;
-    height: 100px; 
-} 
+    height: 100px;
+}
 
 #payment {
     align-items: center;
@@ -369,4 +368,3 @@ li a:hover {
     border: none;
     border-radius: 10px;
 }
-

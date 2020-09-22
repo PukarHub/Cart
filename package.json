@@ -9,7 +9,8 @@
         "server": "nodemon server.js",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "format": "prettier --config .prettierrc --write ."
+        "format": "prettier --config .prettierrc --write .",
+        "setup": "npm i && npm run client-install"
     },
     "repository": {
         "type": "git",
