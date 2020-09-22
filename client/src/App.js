@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Cart from './components/Cart';
 import Order from './components/Order';
-import CustomerDetail from './components/CustomerDetail'
+import CustomerDetail from './components/CustomerDetail';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -18,7 +18,11 @@ const App = () => {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/cart" component={Cart} />
                     <Route exact path="/order" component={Order} />
-                    <Route exact path="/customerdetail" component={CustomerDetail} />
+                    <Route
+                        exact
+                        path="/customerdetail"
+                        component={CustomerDetail}
+                    />
                 </Switch>
             </BrowserRouter>
         </Provider>
